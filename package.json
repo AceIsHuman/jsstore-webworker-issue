@@ -1,0 +1,24 @@
+{
+  "name": "jsstore-webworker-issue",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "npm run electron:build",
+    "dev": "npm run electron:serve",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "jsstore": "^4.4.7",
+    "vue": "^2.7.7"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.13",
+    "electron": "^20.3.0",
+    "electron-devtools-installer": "^3.1.0",
+    "file-loader": "^6.2.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  }
+}
